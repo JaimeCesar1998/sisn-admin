@@ -21,7 +21,7 @@ const OverviewPage = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1 }}
 				>
-					<StatCard name='Total de Administrativos' icon={Users} value='6' color='#10B981' />
+					<StatCard className="bg-gray-900" name='Total de Administrativos' icon={Users} value='6' color='#10B981' />
 					<StatCard name='Total de Hospitais' icon={Hospital} value='4' color='#10B981' />
 					<StatCard name='Total Profissionais Clínicos' icon={HeartPulse} value='6' color='#10B981' />
 					<StatCard name='Total de Pacientes' icon={Users} value='6' color='#10B981' />
