@@ -1,4 +1,4 @@
-import Header from "../components/common/Header";  
+import Header from "../components/common/Header"; 
 import Notifications from "../components/settings/Notifications";
 import Profile from "../components/settings/Profile";
 import Security from "../components/settings/Security";

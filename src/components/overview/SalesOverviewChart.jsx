@@ -2,16 +2,16 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { motion } from "framer-motion";
 
 const medicineOutflowData = [
-	{ name: "Paracetamol", quantity: 1520 },
-	{ name: "Amoxicilina", quantity: 1340 },
-	{ name: "Ibuprofeno", quantity: 1780 },
-	{ name: "Dipirona", quantity: 1620 },
-	{ name: "Losartana", quantity: 1200 },
-	{ name: "Omeprazol", quantity: 1450 },
-	{ name: "Metformina", quantity: 1100 },
-	{ name: "Salbutamol", quantity: 950 },
-	{ name: "Hidroclorotiazida", quantity: 860 },
-	{ name: "Ranitidina", quantity: 720 },
+	{ name: "Paracetamol", quantidade: 1520 },
+	{ name: "Amoxicilina", quantidade: 1340 },
+	{ name: "Ibuprofeno", quantidade: 1780 },
+	{ name: "Dipirona", quantidade: 1620 },
+	{ name: "Losartana", quantidade: 1200 },
+	{ name: "Omeprazol", quantidade: 1450 },
+	{ name: "Metformina", quantidade: 1100 },
+	{ name: "Salbutamol", quantidade: 950 },
+	{ name: "Hidroclorotiazida", quantidade: 860 },
+	{ name: "Ranitidina", quantidade: 720 },
 ];
 
 const MedicineOutflowChart = () => {
@@ -39,7 +39,7 @@ const MedicineOutflowChart = () => {
 						/>
 						<Line
 							type='monotone'
-							dataKey='quantity'
+							dataKey='quantidade'
 							stroke='#F59E0B'
 							strokeWidth={3}
 							dot={{ fill: "#F59E0B", strokeWidth: 2, r: 6 }}

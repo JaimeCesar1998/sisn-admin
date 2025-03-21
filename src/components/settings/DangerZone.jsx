@@ -31,7 +31,6 @@ const TerminarSessao = () => {
         Você poderá entrar novamente a qualquer momento.
       </p>
       <button
-        onClick={handleLogout}
         className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-200"
       >
         Sair
