@@ -9,6 +9,7 @@ import HospitaisNacional from "./pages/HospitaisNacional";
 import PacientesNacional from "./pages/PacientesNacional";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SettingsPage from "./pages/SettingsPage";
+import Relactorios from "./pages/Relactorios";
 import LoginPage from "./pages/Login";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 						<Route path='/pacientes_nacional' element={<PacientesNacional />} />
 						<Route path='/analytics' element={<AnalyticsPage />} />
 						<Route path='/settings' element={<SettingsPage />} />
+						<Route path='/relactorios' element={<Relactorios />} />
 					</Routes> 
 				</div>
 			) : ( 

@@ -10,7 +10,7 @@ const SIDEBAR_ITEMS = [
 	{ name: "Corpo Clínico Nacional", icon: HeartPulse, color: "#8B5CF6", href: "/corpo_clinico_nacional" },
 	{ name: "Pacientes Nacional", icon: Users, color: "#EC4899", href: "/pacientes_nacional" },
 	{ name: "Utilizadores", icon: Users, color: "#ca8a04", href: "/users" },
-	{ name: "Relatórios", icon: FileLineChartIcon, color: "#ca8a04", href: "/relatorios" },
+	{ name: "Relactórios", icon: FileLineChartIcon, color: "#ca8a04", href: "/relactorios" },
 	{ name: "Definições", icon: Settings, color: "#6EE7B7", href: "/settings" },
 ];
 
