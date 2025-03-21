@@ -31,17 +31,19 @@ const UsersTable = () => {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ delay: 0.2 }}
 		>
-			<div className='flex justify-between items-center mb-6'>
-				<h2 className='text-xl font-semibold text-gray-100'>Corpo Clínico Nacional</h2>
-				<div className='relative'>
+			<div className='flex flex-col md:flex-row md:justify-between items-center mb-6 gap-4'>
+    <h2 className='text-lg md:text-xl lg:text-2xl font-semibold text-gray-100 text-center md:text-left'>
+		 Corpo Clínico Nacional
+    </h2>
+				<div className="relative w-full max-w-xs">
+					<Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
 					<input
-						type='text'
-						placeholder='Pesquisar...'
-						className='bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500'
+						type="text"
+						placeholder="Pesquisar..."
+						className="w-full bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
 						value={searchTerm}
 						onChange={handleSearch}
 					/>
-					<Search className='absolute left-3 top-2.5 text-gray-400' size={20} />
 				</div>
 			</div>
 
