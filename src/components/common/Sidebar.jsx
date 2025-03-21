@@ -1,4 +1,4 @@
-import { BarChart2, DollarSign, FileLineChartIcon, HeartPulse, Hospital, LayoutDashboardIcon, Menu, Settings, Users } from "lucide-react";
+import { BarChart2, DollarSign, FileLineChartIcon, HeartPulse, Hospital, LayoutDashboardIcon, Menu, Settings, Users, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -45,7 +45,7 @@ const Sidebar = () => {
 					onClick={() => setIsSidebarOpen(!isSidebarOpen)}
 					className='p-2 rounded-full hover:bg-gray-700 transition-colors max-w-fit self-center mb-4'
 				>
-					<Menu size={24} />
+					{isSidebarOpen ? <ChevronLeft size={24} /> : <ChevronRight size={24} />}
 				</motion.button>
 
 				{/* MENU */}
