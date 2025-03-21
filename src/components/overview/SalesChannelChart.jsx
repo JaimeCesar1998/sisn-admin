@@ -4,13 +4,13 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 const COLORS = ["#10B981", "#F59E0B", "#EF4444", "#6366F1", "#8B5CF6", "#EC4899"]; 
 
 const PATIENT_STATUS_DATA = [
-	{ name: "Recuperado", value: 4 },
-	{ name: "Estável", value: 0 },
-	{ name: "Em Tratamento", value: 1 },
-	{ name: "Grave", value: 0 },
-	{ name: "Crítico", value: 0 },
-	{ name: "Internado", value: 0 },
-	{ name: "Em Observação", value: 1 },
+	{ name: "Recuperado", estado: 4 },
+	{ name: "Estável", estado: 0 },
+	{ name: "Em Tratamento", estado: 1 },
+	{ name: "Grave", estado: 0 },
+	{ name: "Crítico", estado: 0 },
+	{ name: "Internado", estado: 0 },
+	{ name: "Em Observação", estado: 1 },
 ];
 
 const PatientStatusBarChart = () => {
@@ -37,7 +37,7 @@ const PatientStatusBarChart = () => {
 							itemStyle={{ color: "#E5E7EB" }}
 						/>
 						<Legend />
-						<Bar dataKey={"value"} fill='#8884d8'>
+						<Bar dataKey={"estado"} fill='#8884d8'>
 							{PATIENT_STATUS_DATA.map((entry, index) => (
 								<Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
 							))}
