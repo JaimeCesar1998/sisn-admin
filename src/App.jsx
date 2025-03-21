@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Sidebar from "./components/common/Sidebar";
 import OverviewPage from "./pages/OverviewPage";
@@ -13,7 +13,9 @@ import LoginPage from "./pages/Login";
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+	useEffect(() => {
+		document.title = "Sistema Integrado de Saúde Nacional";
+	  }, []);
 	return (
 	<div>
 		{isAuthenticated ? (
