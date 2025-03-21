@@ -11,9 +11,9 @@ const SURTO_DATA = [
 ];
 
 const COLORS = {
-  "Pandemia": "#FF0000",  // Vermelho intenso
+  "Pandemia": "#FF0000",   // Vermelho intenso
   "Epidemia": "#FFA500",  // Laranja vibrante
-  "Endemia": "#008000"    // Verde escuro
+  "Endemia":  "#B22222"  // Vermelho
 };
 
 // Componente do Tooltip personalizado com bordas coloridas

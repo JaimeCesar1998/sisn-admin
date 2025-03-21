@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell, LabelList } from "recharts";
 
-const COLORS = ["#10B981", "#F59E0B", "#EF4444", "#6366F1", "#8B5CF6", "#EC4899"];
+const COLORS = ["#10B981", "#007BFF", "#FFC107", "#B22222", "#B22222", "#EC4899", "gray"];
 
 const PATIENT_STATUS_DATA = [
   { name: "Recuperado", estado: 4 },
